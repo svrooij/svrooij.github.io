@@ -21,12 +21,12 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
+  limit: 10
   exclude:
     archived: false
     forks: false
     projects:
-    # - repo-name
+    - svrooij.github.io
 
 social_media:
   # behance: your_username

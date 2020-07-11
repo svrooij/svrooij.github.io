@@ -21,12 +21,14 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 10
+  limit: 12
   exclude:
     archived: false
     forks: false
     projects:
     - svrooij.github.io
+    - node-sonos
+    - svrooij
 
 social_media:
   # behance: your_username

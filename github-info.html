@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Github information</title>
+  </head>
+  <body>
+    <h1>Find github user info</h1>
+    <input type="text" id="github_username" placeholder="Github username" onkeyup="keyPressed(event);"/>
+    <button onclick="loadUserInfo();">Search</button>
+    <hr />
+    <div id="info" style="display: none;">
+      <h3>Co-authored-by</h3>
+      <pre id="co-authored-by"></pre>
+    </div>
+    <script type="text/javascript" src="/assets/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+
+
+function keyPressed(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    loadUserInfo();
+  }
+}
+
+function loadUserInfo() {
+  const username = $('#github_username').val();
+  $.getJSON(`https://api.github.com/users/${username}?callback=?`, {}, (resp) => {
+    const u = resp.data;
+    $('#info').show();
+    $('#co-authored-by').text(`Co-authored-by: ${u.name} <${u.id}+${u.login}@users.noreply.github.com>`);
+    console.log(resp.data);
+  });
+}
+</script>
+  </body>
+</html>

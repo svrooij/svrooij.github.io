@@ -22,6 +22,8 @@ If the extra author doesn't want his/her email to become public. Or you don't kn
 2. Get the Github user ID [try this page](https://caius.github.io/github_id/)
 3. format the email like `[userID]+[github_username]@users.noreply.github.com`
 
+Or generate the Co-Authored text [here](/github-info.html).
+
 ## Contribute code to me
 
 So you want to commit code to me? You the following in your commit message (yes the empty line is required).

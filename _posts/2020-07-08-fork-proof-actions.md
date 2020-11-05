@@ -1,6 +1,9 @@
 ---
 title: "Fork proof actions"
 published: true
+tags:
+  - Github
+  - Github Actions
 ---
 
 Github actions are a great tool to setup automatic build and tests. I also use it for any of my automatic releases. See [this](https://svrooij.nl/2020/06/automate-your-release-with-github-actions/) post.

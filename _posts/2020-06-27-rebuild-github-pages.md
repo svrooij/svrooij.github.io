@@ -1,6 +1,10 @@
 ---
 title: "Daily rebuild github pages"
 published: true
+tags:
+  - Github
+  - Github Actions
+  - Github Pages
 ---
 
 Today I switched to [personal website](https://github.com/github/personal-website) for my new [personal page](https://static.svrooij.nl) on Github.

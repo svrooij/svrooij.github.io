@@ -1,6 +1,8 @@
 ---
 title: "Wordpress plugin REST in peace"
 published: true
+tags:
+  - Wordpress
 ---
 
 In January 2017 I released a plugin for Wordpress called [WP REST API - filter fields](https://wordpress.org/support/plugin/rest-api-filter-fields/) it had a somewhat limited reach (2000+ active installs according to the stats),

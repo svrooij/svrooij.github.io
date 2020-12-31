@@ -8,11 +8,11 @@ tags:
 image: /assets/images/mqtt-extra-device.png
 ---
 
-I've been using [zigbee2mqtt](https://zigbee2mqtt.io) for years (for the people that don't know zigbee2mqtt, it's a great way to get rid of proprietary Zigbee hubs). At the moment I have 38 zigbee devices connected.
+I've been using [zigbee2mqtt](https://www.zigbee2mqtt.io) for years (for the people that don't know zigbee2mqtt, it's a great way to get rid of proprietary Zigbee hubs). At the moment I have 38 zigbee devices connected.
 
 ## Calex Smart wall switch
 
-I bought a Zigbee device that wasn't supported until I bought the [Calex Smart wall switch](https://www.kabelshop.nl/Calex-Wandschakelaar-ZigBee-Calex-Kleur-Dimmen-2-4-GHz-421782-i11400-t27571.html). That is because I always checked the [supported device list](https://www.zigbee2mqtt.io/information/supported_devices.html) before buying a new device.
+I never bought a Zigbee device that wasn't supported until I bought the [Calex Smart wall switch](https://www.kabelshop.nl/Calex-Wandschakelaar-ZigBee-Calex-Kleur-Dimmen-2-4-GHz-421782-i11400-t27571.html). That is because I always check the [supported device list](https://www.zigbee2mqtt.io/information/supported_devices.html) before buying a new device.
 
 I wanted to have a switch that I could mount to the wall that would allow me to control the colors of the lights in the house. So I bought these anyway, and saw it as an quest to get them working.
 
@@ -20,7 +20,7 @@ There even is a [special page](https://www.zigbee2mqtt.io/how_tos/how_to_support
 
 ### Building support for the extra device
 
-Adding support for a new device is just a matter of editting the [devices.js](https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/devices.js) file with the right values. For me I just looked at the supported devices list to see if there was a device that might had some what the same functionality and found the [Iluminize 511.344](https://www.zigbee2mqtt.io/devices/511.344.html). They both have a color wheel, on/off and brightness control. The Iluminize also has 4 buttons but they are missing on my switch.
+Adding support for a new device is just a matter of editting the [devices.js](https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/devices.js) file with the right values. I just looked at the supported devices list to see if there was a device that might had some what the same functionality and found the [Iluminize 511.344](https://www.zigbee2mqtt.io/devices/511.344.html). They both have a color wheel, on/off and brightness control. The Iluminize also has 4 buttons but they are missing on my switch.
 
 ### Code to support this new device
 
@@ -105,6 +105,12 @@ Just reboot and you're ready to go!
 ## Developer notes
 
 Things to keep in mind.
+
+### Start small
+
+If I would need to do this again I would first add just the model so you can pair it and then one-by-one add the converters and the expose. Adding this device did however cost me less time then writing this post about it.
+
+Koen did a great job in starting and maintaining zigbee2mqtt, and I would like to ask everybody that uses this package to have a look at his [sponsor page](https://github.com/sponsors/Koenkk).
 
 ### External converters as NPM package
 

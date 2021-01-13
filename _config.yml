@@ -23,8 +23,8 @@ projects:
   #   - stars
   limit: 12
   exclude:
-    archived: false
-    forks: false
+    archived: true
+    forks: true
     projects:
     - svrooij.github.io
     - node-sonos
@@ -45,7 +45,7 @@ social_media:
   twitter: svrooij
   # unsplash: your_username
   # vk: your_username
-  website: https://svrooij.nl
+  website: https://svrooij.io
   # youtube: your_username
 
 topics:

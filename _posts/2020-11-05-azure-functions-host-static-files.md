@@ -20,7 +20,7 @@ Some would ask, why would you want to host static files from an Azure Functions 
 
 ## Static file server function
 
-Since it's still hosted in Azure Functions you'll need a function to server the specific files. The following function servers all the files from the `www` folder in your functions app by specifing it's filename as a query parameter. `/api/ServeStaticFile?file=index.html`. Make sure the files you want to serve are marked as `content`.
+Since it's still hosted in Azure Functions you'll need a function to server the specific files. The following function servers all the files from the `www` folder in your functions app by specifing it's filename as a query parameter. `/api/ServeStaticFile?file=index.html`. Make sure the files you want to serve are marked as `content`. Add the [MimeTypeMapOfficial package](https://www.nuget.org/packages/MimeTypeMapOfficial) to get `using MimeTypes;` working.
 
 ```csharp
 using System;
@@ -47,7 +47,7 @@ namespace AzureFunctions.StaticFiles
         // The used settings can be in any config (environment, host.json local.settings.json)
         public ServeStaticFile(IConfiguration configuration)
         {
-            this.contentRoot = Path.GetFullPath(Path.Join(
+            this.contentRoot = Path.GetFullPath(Path.Combine(
               configuration.GetValue<string>(ConfigurationKeyApplicationRoot),
               staticFilesFolder));
             this.defaultPage = configuration.GetValue<string>("DEFAULT_PAGE", "index.html");
@@ -108,7 +108,7 @@ namespace AzureFunctions.StaticFiles
 
 ## Using a proxy for nice urls
 
-Having a function that serves a file is one thing, but you probably want to call `/style.css` instead of `/api/ServeStaticFile?file=style.css`. This can be accomplished with the [Azure functions proxies](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies) feature.
+Having a function that serves a file is one thing, but you probably want to call `/app/style.css` instead of `/api/ServeStaticFile?file=style.css`. This can be accomplished with the [Azure functions proxies](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies) feature.
 
 Create a `proxies.json` file in the root of your functions project, with the following content and reboot your functions app.
 

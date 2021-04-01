@@ -43,13 +43,12 @@ version: '3.3'
 services:
   jekyll:
     volumes:
-        - './.bundle:/usr/local/bundle'
         - './:/srv/jekyll'
     ports:
         - '4000:4000'
         - '35729:35729'
     image: jekyll/jekyll
-    command: jekyll serve --livereload --force_polling
+    command: jekyll serve --incremental --livereload --force_polling
 ```
 
 ### Live reload

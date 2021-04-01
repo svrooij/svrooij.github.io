@@ -70,4 +70,4 @@ You're then left to add the javascript to your page, you'll only have to do this
 {% endraw %}
 ```
 
-<script src="/assets/mermaid-8.9.2/mermaid.min.js"></script>
+<script src="{{ "/assets/mermaid-8.9.2/mermaid.min.js" | relative_url }}"></script>

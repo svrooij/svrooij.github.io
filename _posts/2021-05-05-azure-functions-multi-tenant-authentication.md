@@ -68,8 +68,8 @@ if (!issuers.Contains(issuer)) {
 }
 
 // Filter personal accounts
-// The issuer for personal accounts is always the same, I just don't have it present at the moment.
-if (issuer == "xxx") {
+// The issuer for personal accounts is always the same, according to jwt.ms
+if (issuer == "https://login.microsoftonline.com/9188040d-6c67-4c5b-b112-36a304b66dad/v2.0") {
 
 }
 ```

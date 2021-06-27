@@ -56,3 +56,13 @@
     <iframe src="https://github.com/sponsors/svrooij/button" title="Sponsor svrooij" height="35" width="107" style="border: 0;"></iframe>
   </div>
 {% endif %}
+
+
+<ul>
+  {% for tag in site.tags | sort %}
+    {% assign tag_name = tag[0] %}
+    <li>
+      <a href="/tag/{{ tag_name | slugify }}/">{{ tag_name | replace: "-", " " }}</a>
+    </li>
+  {% endfor %}
+  </ul>

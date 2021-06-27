@@ -5,6 +5,7 @@ plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll-archives
 
 permalink: /:year/:month/:day/:title/
 
@@ -57,3 +58,15 @@ topics:
 
   - name: ESP8266
     web_url: https://github.com/topics/esp8266
+
+jekyll-archives:
+  enabled:
+    - categories
+    - year
+    - month
+    - tags
+  layout: archive
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    tag: '/tag/:name/'

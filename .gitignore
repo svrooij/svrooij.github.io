@@ -6,6 +6,6 @@ Gemfile.lock
 **/.ruby-version
 .jekyll-metadata
 node_modules/**/*.*
-node_modules/@primer/primitives
+!*node_modules/@primer/primitives/**/*.scss
 !*node_modules/@primer/css/**/*.scss
 

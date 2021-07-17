@@ -1,0 +1,8 @@
+{
+  "name": "@svrooij/static-blog",
+  "version": "1.0.0",
+  "private": "true",
+  "dependencies": {
+    "@primer/css": "^17.4.0"
+  }
+}

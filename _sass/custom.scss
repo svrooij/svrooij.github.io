@@ -1,8 +1,3 @@
----
----
-@import url('https://unpkg.com/primer/build/build.css');
-@import 'highlight-syntax';
-
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
@@ -69,4 +64,12 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 10rem;
+}
+
+.home-block {
+  padding: 20px;
+}
+
+.intro {
+  background-color: #F4BF93;
 }

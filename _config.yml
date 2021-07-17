@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stacked
 style: light
 
 plugins:
@@ -7,6 +7,12 @@ plugins:
   - jemoji
 
 permalink: /:year/:month/:day/:title/
+
+sass:
+  sass_dir: assets/css/
+  load_paths:
+    - node_modules/
+    - _sass/
 
 defaults:
   -
@@ -31,21 +37,25 @@ projects:
     - svrooij
 
 social_media:
+  twitter: svrooij
+  website: https://svrooij.io
+  linkedin: stephanvanrooij
+  stackoverflow: 639153
   # behance: your_username
   # dribbble: your_username
   facebook: svrooij
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  linkedin: stephanvanrooij
+  
   # mastodon: your_username
   # medium: your_username
-  stackoverflow: 639153
+  
   # telegram: your_username
-  twitter: svrooij
+  
   # unsplash: your_username
   # vk: your_username
-  website: https://svrooij.io
+  
   # youtube: your_username
 
 topics:

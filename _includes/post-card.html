@@ -1,10 +1,15 @@
-<div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
-  <div class="d-flex flex-justify-between flex-items-start mb-1">
-    <h1 class="f4 lh-condensed mb-1">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+{% assign bg_image = post.image | default: post.card_image | default: "/assets/images/header-development.png" %}
+<div class="height-full text-center {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3 pos-rel">
+  <div class="post-background" style="background-image: url('{{bg_image}}');" ></div>
+  <a class="d-flex flex-column flex-justify-between height-full no-underline color-text-primary post-card"
+    href="{{ post.url }}"
+    > <!-- flex-justify-between flex-items-center mb-1 -->
+    <h4 class="h4-mktg mb-1">
+     <!-- <a >  href="{{ site.baseurl }}{{ post.url }}" -->
         {{ post.title }}
-      </a>
-    </h1>
-  </div>
-  <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%b %d, %Y"}}</div>
+      <!-- </a> -->
+    </h4>
+    <span class="text-gray ws-normal h4">{{ post.date | date: "%Y-%m-%d" }}</span>
+  </a>
+  
 </div>

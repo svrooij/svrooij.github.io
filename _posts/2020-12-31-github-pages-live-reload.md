@@ -20,7 +20,7 @@ Jekyll is build in ruby, and if you have ruby installed you can also use your lo
 
 ## Use docker to live reload
 
-I'm not a ruby expert, nor do I want to install any tools that I don't know how they work. I already had docker installed, so I figured out what was the most convenient way to enable live reload for my blog. This will probably work for most jekyll project but you might have to tweak some things.
+I'm not a ruby expert, nor do I want to install any tools that I don't know how they work. I already had docker installed, so I figured out it was the most convenient way to enable live reload for my blog. This will probably work for most jekyll projects but you might have to tweak some things.
 
 ### Gemfile
 

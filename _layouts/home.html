@@ -11,17 +11,17 @@
     </div>
 
     {% unless posts_total == 0 %}
-      <div class="p-4 my-6">
+      <div class="p-4 mt-6" id="posts">
         {% include thoughts.html %}
       </div>
     {% endunless %}
 
-    <div class="p-4 my-6 color-bg-tertiary">
+    <div class="p-4 mt-6 color-bg-tertiary">
       {% include projects.html %}
     </div>
 
-    {% if site.topics %}
-      <div class="p-4 my-6">
+    {% if site.topics and paginator.page == 1 %}
+      <div class="p-4 mt-6">
         {% include interests.html %}
       </div>
     {% endif %}

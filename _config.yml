@@ -5,6 +5,7 @@ plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll-paginate
 
 permalink: /:year/:month/:day/:title/
 
@@ -67,3 +68,5 @@ topics:
 
   - name: ESP8266
     web_url: https://github.com/topics/esp8266
+
+paginate: 6

@@ -6,6 +6,7 @@ tags:
   - Markdown
   - Charts
   - Mermaid
+card_image: /assets/images/header-flow-chart.png
 ---
 
 Flow diagrams can help greatly to explain some flow, it works much better the just text. To generate visual flows from text (markdown), [Knut Sveidqvist](https://github.com/knsv) created [Mermaid-js](https://mermaid-js.github.io/mermaid/#/). It's awesome, go check out the docs.

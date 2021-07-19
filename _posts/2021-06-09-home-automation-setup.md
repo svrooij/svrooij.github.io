@@ -4,7 +4,7 @@ published: true
 tags:
   - Home automation
   - mqtt
-
+image: /assets/images/header-home-automation.png
 ---
 
 I'm big fan of smart homes, almost everything in our home is controlable over the network. And I've build [some awesome apps](#my-smarthome-apps) for it.

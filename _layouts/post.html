@@ -51,6 +51,19 @@
       
       
       {{ post_body }}
+
+      <div class="pagination mt-4 text-center">
+
+        {% if page.previous.url %}
+        <a class="previous_page" href="{{page.previous.url}}">{{page.previous.title}}</a>
+      {% endif %}
+        
+        {% if page.next.url %}
+          <a class="next_page" href="{{page.next.url}}">{{page.next.title}}</a>
+        {% endif %}
+
+
+      </div>
     </div>
   </div>
   <!-- post.html Stacked end-->
@@ -74,6 +87,19 @@
             </p>
             
             {{ post_body }}
+
+            <div class="pagination mt-4 text-center">
+
+              {% if page.previous.url %}
+              <a class="previous_page" href="{{page.previous.url}}">{{page.previous.title}}</a>
+            {% endif %}
+              
+              {% if page.next.url %}
+                <a class="next_page" href="{{page.next.url}}">{{page.next.title}}</a>
+              {% endif %}
+
+
+            </div>
           </div>
         </div>
       </div>

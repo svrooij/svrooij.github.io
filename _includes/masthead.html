@@ -16,7 +16,7 @@
     {% if user.name %}
       <div class="{{ metadata_styles }}">
         
-        <a href="https://github.com/{{ user.login }}" class="Link--primary">
+        <a href="https://github.com/{{ user.login }}">
           {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
           @{{ user.login }}
         </a>

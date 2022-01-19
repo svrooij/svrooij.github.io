@@ -9,11 +9,8 @@
   <header class="entry-header">
     <h2 class="entry-title"><a href="{{ post.url }}" class="Link--secondary no-underline">{{ post.title }}</a></h2>
     <div class="entry-meta">
-      <!-- <div class="meta-item meta-author">By <span class="vcard author"><span class="fn"><a
-              href="https://svrooij.nl/author/stephan/">Stephan van Rooij</a></span></span></div> -->
       {% for cat in post.categories limit: 1 %}<div class="meta-item meta-category">In {{ cat }}</div>{% endfor %}
       <div class="meta-item meta-date"><span class="updated">{{ post.date | date: "%Y-%m-%d" }}</span></div>
-      <!-- <div class="meta-item meta-rtime">4 Min read</div> -->
     </div>
     <div class="post-letter">{{ post.title | slice: 0 }}</div>
   </header>

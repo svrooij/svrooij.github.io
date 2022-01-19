@@ -1,0 +1,15 @@
+<article class="typology-post pt-1 mb-6 pb-4">
+  <header class="entry-header">
+    <h2 class="entry-title"><a href="{{ page.url }}" class="Link--secondary no-underline">{{ page.title }}</a></h2>
+    <div class="entry-meta">
+      {% for cat in page.categories limit: 1 %}<div class="meta-item meta-category">In {{ cat }}</div>{% endfor %}
+      <div class="meta-item meta-date"><span class="updated">{{ page.date | date: "%Y-%m-%d" }}</span></div>
+    </div>
+    <div class="post-letter">{{ page.title | slice: 0 }}</div>
+  </header>
+
+  <div class="entry-content mb-4">
+    {{ content }}
+  </div>
+
+</article>

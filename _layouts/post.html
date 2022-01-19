@@ -1,111 +1,26 @@
 {% include header.html %}
 
-{% capture post_body %}
-  {% if site.social_media %}
-    {% assign shareable_social_media = '' | split: ',' %}
+<div class="container-fluid text-center">
+  {% include masthead.html metadata=false %}
 
-    {% for account in site.social_media %}
-      {% assign service_shortname = account[0] %}
-      {% assign service = site.data.social_media[service_shortname] %}
-
-      {% if service.share_url_prefix %}
-        {% assign shareable_social_media = shareable_social_media | push: service %}
+  <div class="p-4 mt-6">
+    <div class="container-md">
+      {% include article.html %}
+    </div>
+    <div class="pagination mt-4 text-center">
+      {% if page.previous.url %}
+      <a class="previous_page" href="{{page.previous.url}}">{{page.previous.title}}</a>
       {% endif %}
-    {% endfor %}
-
-    {% assign total_shareable_services = shareable_social_media | size %}
-
-    {% if total_shareable_services > 0 %}
-      <div class="col-sm-4 col-lg-3 d-flex flex-wrap flex-items-center d-sm-block float-sm-right border rounded-2 bg-white p-3 mb-5 ml-md-5">
-        <div>
-          {% if page.tags %}<p>{% for tag in page.tags %}<span class="badge badge-primary">{{ tag }}</span> {% endfor %}</p>{% endif %}
-          <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">Published {{ page.date | date: "%b %d, %Y"}}</p>
-        </div>
-        <h3 class="text-gray-dark mr-3 mr-sm-0">Share</h3>
-        <ul class="d-flex d-sm-block list-style-none">
-          {% for service in shareable_social_media %}
-            <li class="mt-sm-3">
-              <a href="{{ service.share_url_prefix }}{{ page.url | prepend: site.url | prepend: site.baseurl | url_encode }}" title="Share on {{ service.name }}" class="d-flex flex-items-center">
-                <div style="width:32px">{{ service.icon_svg }}</div><span class="d-none d-sm-inline-block text-gray-light">{{ service.name }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-  {% endif %}
-  <div class="article">
-    {{ content }}
-  </div>
-{% endcapture %}
-
-{% if site.layout == 'stacked' %}
-<!-- post.html Stacked-->
-  <div class="container-fluid text-center">
-    {% include masthead.html metadata=false %}
-
-    <div class="container-lg f4 text-left bg-white p-sm-5 mt-6">
-      <!-- <p class="f5"><a href="/" class="d-flex flex-items-center">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#0366d6 aria-label:Home %}Home</a></p> -->
-      {% if page.image %}<img src="{{ page.image }}" width="100%" />{% endif %}
-      <h1 class="f00-light lh-condensed text-center mb-5">{{ page.title }}</h1>
       
-      
-      {{ post_body }}
-
-      <div class="pagination mt-4 text-center">
-
-        {% if page.previous.url %}
-        <a class="previous_page" href="{{page.previous.url}}">{{page.previous.title}}</a>
+      {% if page.next.url %}
+        <a class="next_page" href="{{page.next.url}}">{{page.next.title}}</a>
       {% endif %}
-        
-        {% if page.next.url %}
-          <a class="next_page" href="{{page.next.url}}">{{page.next.title}}</a>
-        {% endif %}
-
-
-      </div>
     </div>
   </div>
-  <!-- post.html Stacked end-->
-{% else %}
-<!-- post.html not Stacked-->
-  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
-    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
-      {% include masthead.html metadata=true %}
-    </div>
 
-    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
-      <div class="mx-auto" style="max-width: 900px;">
-        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
-          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
-            <p class="f5"><a href="/" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a></p>
-            <h1 class="f00-light lh-condensed text-center">{{ page.title }}</h1>
-            {% if page.image %}<img src="{{ page.image }}" width="100%" />{% endif %}
-            {% if page.tags %}<p>{% for tag in page.tags %}<span class="badge badge-primary">{{ tag }}</span> {% endfor %}</p>{% endif %}
-            <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">
-              Published {{ page.date | date: "%b %d, %Y"}}
-            </p>
-            
-            {{ post_body }}
+  
 
-            <div class="pagination mt-4 text-center">
+</div>
 
-              {% if page.previous.url %}
-              <a class="previous_page" href="{{page.previous.url}}">{{page.previous.title}}</a>
-            {% endif %}
-              
-              {% if page.next.url %}
-                <a class="next_page" href="{{page.next.url}}">{{page.next.title}}</a>
-              {% endif %}
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- post.html not stacked end-->
-{% endif %}
 
 {% include footer.html %}

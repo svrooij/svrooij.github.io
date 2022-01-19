@@ -5,6 +5,9 @@
   text-align: left;
   .entry-content {
     font-size:1.3rem;
+    img {
+      max-width: 100%;
+    }
   }
 }
 

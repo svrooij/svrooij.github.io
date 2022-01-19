@@ -20,7 +20,7 @@
   vertical-align: middle;
 }
 
-.article {
+article {
   h1, h2, h3, h4,
   .highlight {
     margin-bottom: 16px;
@@ -34,7 +34,7 @@
   }
 
   ul, ol {
-    padding-left: 32px;
+    padding-left: 40px;
     margin-bottom: 16px;
   }
 
@@ -72,9 +72,6 @@
 
 .intro {
   background-color: #00A880;
-  h1 {
-    font-size: 5rem;
-  }
 }
 
 .intro a {
@@ -117,8 +114,7 @@
 }
 
 code.language-plaintext {
-  background-color: rgba(27,31,35,0.05);
-  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.13);
   border-radius: 6px;
   padding: .2em .4em;
 }
@@ -126,8 +122,13 @@ code.language-plaintext {
 .highlighter-rouge pre.highlight {
   background-color: #f6f8fa ;
   border-radius: 6px;
-  font-size: 85%;
-  line-height: 1.45;
+  line-height: 1.4rem;
   overflow: auto;
   padding: 16px;
 }
+
+code {
+  font-size: 0.80em;
+}
+
+pre { font-size: inherit !important;}

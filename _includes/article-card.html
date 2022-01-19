@@ -7,7 +7,7 @@
   class="typology-post pt-1 mb-6 pb-4">
 
   <header class="entry-header">
-    <h2 class="entry-title"><a href="{{ post.url }}" class="Link--secondary no-underline">{{ post.title }}</a></h2>
+    <h2 class="entry-title"><a href="{{ post.url }}#post" class="Link--secondary no-underline">{{ post.title }}</a></h2>
     <div class="entry-meta">
       {% for cat in post.categories limit: 1 %}<div class="meta-item meta-category">In {{ cat }}</div>{% endfor %}
       <div class="meta-item meta-date"><span class="updated">{{ post.date | date: "%Y-%m-%d" }}</span></div>
@@ -22,7 +22,7 @@
 
 
   <div class="entry-footer">
-    <a href="{{ post.url }}" class="btn btn-outline">Read on</a>
+    <a href="{{ post.url }}#post" class="btn btn-outline">Read on</a>
   </div>
 
 </article>

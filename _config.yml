@@ -71,4 +71,6 @@ topics:
 
 paginate: 4
 
+avatar_url: /assets/my-github-picture.png
+
 excerpt_separator: <!--more-->

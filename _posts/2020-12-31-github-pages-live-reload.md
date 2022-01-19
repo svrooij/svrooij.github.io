@@ -1,6 +1,8 @@
 ---
 title: "Github pages (Jekyll) live reload with docker"
 published: true
+categories:
+  - Development
 tags:
   - Github
   - Github Pages
@@ -9,6 +11,8 @@ image: /assets/images/jekyll-docker-love.png
 ---
 
 I really like [Github Pages](https://pages.github.com/) to host static webpages. Static in this case means the files are generated at build time (so once when you publish a new version), instead of every time like with a wordpress website. One of the main benefits is that it results in a blazing fast website.
+
+<!--more-->
 
 ## Jekyll
 

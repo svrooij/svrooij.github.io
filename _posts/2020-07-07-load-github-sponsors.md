@@ -1,6 +1,8 @@
 ---
 title: "Query github sponsors with graphql"
 published: true
+categories:
+  - Development
 tags:
   - Github
   - Github Sponsors
@@ -9,6 +11,8 @@ tags:
 Github exposes all their data at a [GraphQL endpoint](https://developer.github.com/v4/), that you can also try out with the [Github GraphQL explorer](https://developer.github.com/v4/explorer/).
 
 If you want to query who is sponsoring you, use the following GraphQL. You can use this query at the explorer of in your own graphql client.
+
+<!--more-->
 
 ```graphql
 {

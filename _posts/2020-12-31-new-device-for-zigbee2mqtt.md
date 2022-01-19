@@ -1,6 +1,8 @@
 ---
 title: "Adding device support to zigbee2mqtt"
 published: true
+categories:
+  - Home Automation
 tags:
   - zigbee2mqtt
   - Device support
@@ -9,6 +11,8 @@ image: /assets/images/mqtt-extra-device.png
 ---
 
 I've been using [zigbee2mqtt](https://www.zigbee2mqtt.io) for years (for the people that don't know zigbee2mqtt, it's a great way to get rid of proprietary Zigbee hubs). At the moment I have 38 zigbee devices connected.
+
+<!--more-->
 
 ## Calex Smart wall switch
 

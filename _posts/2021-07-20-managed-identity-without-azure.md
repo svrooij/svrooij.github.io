@@ -1,6 +1,8 @@
 ---
 title: "Using Managed Identity without Azure"
 published: true
+categories:
+  - Development
 tags:
   - Azure
   - Managed identity
@@ -10,6 +12,8 @@ card_image: /assets/images/header-development.png
 Azure [managed identities](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) are great. You just turn it on and your Azure Resource can request a token for other resources that support it in your tenant. This way each resource in Azure can get it's own "identity" and Microsoft will manage the credentials for you. You'll no longer have to store credentials in the configuration as this is all part of the managed services.
 
 This post will give you an in-depth view of how Azure allows several client apps to requests tokens for Azure Resources.
+
+<!--more-->
 
 ## Using a Managed Identity in dotnet core
 

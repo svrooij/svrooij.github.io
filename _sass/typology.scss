@@ -1,0 +1,64 @@
+.typology-post {
+  position: relative;
+  // margin-bottom: 4rem;
+  // padding-bottom: 5rem;
+  text-align: left;
+  .entry-content {
+    font-size:1.3rem;
+  }
+}
+
+.entry-footer, .entry-header {
+  position: relative;
+  z-index: 2;
+}
+
+.entry-header {
+  margin-bottom: 2.3rem;
+  h1 {
+    font-size: 4.0rem;
+  }
+  .entry-title {
+    display: block;
+    margin-bottom: 0;
+    color:brown;
+    font-size: 3rem;
+    a:href,a:hover {
+      text-decoration: none;
+    }
+  }
+  .post-letter {
+    line-height: 1.2;
+    color: rgba(0,0,0,.07);
+    z-index: 1;
+    position: absolute;
+    top: 37%;
+    left: -6rem;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-size: 16.0rem;
+    font-weight: 700;
+  }
+  .entry-meta {
+    margin-top: .6rem;
+    .meta-item {
+      font-size: 1.2rem;
+
+      display: inline-table;
+      vertical-align: top;
+    }
+    .meta-item:not(:last-child):after {
+      display: inline-block;
+      text-align: center;
+      width: 25px;
+      content: ' /'
+    }
+  }
+}

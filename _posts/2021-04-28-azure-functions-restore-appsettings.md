@@ -1,6 +1,8 @@
 ---
 title: "Azure Functions restore app settings"
 published: true
+categories:
+  - Development
 tags:
   - Azure Functions
   - App settings
@@ -8,6 +10,8 @@ image: /assets/images/azure-functions-json.png
 ---
 
 Azure Functions share a lot with ASP.NET core, but some really useful things aren't supported by default. I was missing the [configuration stuff](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/) when building an Azure Functions app.
+
+<!--more-->
 
 ## What is missing
 

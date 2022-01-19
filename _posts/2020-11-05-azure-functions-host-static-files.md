@@ -1,6 +1,8 @@
 ---
 title: "Azure Functions serve static files"
 published: true
+categories:
+  - Development
 tags:
   - Azure Functions
   - Static files
@@ -8,6 +10,8 @@ image: /assets/images/azure-functions-angular-love.png
 ---
 
 Azure functions are great to quickly create an API. But did you know you can also host static files with it? Anthony Chu made a [great post](https://anthonychu.ca/post/azure-functions-static-file-server/) about hosting static files in Azure Functions. His code is from March 9, 2017 however, and can be improved in the mean time.
+
+<!--more-->
 
 ## Why host static files with Azure Functions
 

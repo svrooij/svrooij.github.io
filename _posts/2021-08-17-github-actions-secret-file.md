@@ -1,6 +1,8 @@
 ---
 title: "Github Actions: Use secret file"
 published: true
+categories:
+  - Development
 tags:
   - Github Actions
   - CI
@@ -14,6 +16,8 @@ card_image: /assets/images/header-development.png
 Sometimes you need a file that is meant to be secret inside your workflow. This post shows you how to securely save this file as a secret and recreate the file during build. We use base64 encoding for a way to convert any file to a string that can be saved in the secrets.
 
 This is all done in powershell core, which is available in all (Windows/Mac/Linux) runners on Github. The code below should work on any platform, but is only tested on a `windows-latest` runner.
+
+<!--more-->
 
 ## File to base64 string
 

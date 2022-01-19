@@ -1,12 +1,16 @@
 ---
 title: "Git extra author"
 published: true
+categories:
+  - Development
 tags:
   - Git
   - Github
 ---
 
 If someone else created some sourcecode, but for whatever reason they aren't the one adding it to the repository. You can still have their name/photo in the git commit.
+
+<!--more-->
 
 ## Add an extra author
 

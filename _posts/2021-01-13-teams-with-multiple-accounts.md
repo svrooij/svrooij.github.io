@@ -1,6 +1,8 @@
 ---
 title: "Microsoft Teams Desktop with multiple accounts"
 published: true
+categories:
+  - Lifehack
 tags:
   - Microsoft Teams
   - Multi-tenant
@@ -8,6 +10,8 @@ image: /assets/images/two-teams.png
 ---
 
 We use Microsoft Teams a lot for communication, but once you start using it with multiple accounts you continuously have to switch accounts. That means logging out and signin back in with the other account.
+
+<!--more-->
 
 ## Using multiple Microsoft Teams instances
 

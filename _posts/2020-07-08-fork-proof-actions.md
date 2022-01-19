@@ -1,6 +1,8 @@
 ---
 title: "Fork proof actions"
 published: true
+categories:
+  - Development
 tags:
   - Github
   - Github Actions
@@ -10,6 +12,8 @@ Github actions are a great tool to setup automatic build and tests. I also use i
 Until now there was one thing missing. If someone would fork the repository, all builds would fail because of missing secrets needed for the release.
 
 Yesterday I released my [first github action](https://github.com/svrooij/secret-gate-action), it allows you to check if certain secrets are set, and then decide to continue yourself. Or skip specific steps, this functionallity seemed to be missing from the actions marketplace. So now yoou can check the existens of certain secrets (or other inputs), and decide to either have the actioon run fail or just continue and skip some steps.
+
+<!--more-->
 
 ![Screenshot action result](/assets/images/2020-07-08_github-action-result.png)
 

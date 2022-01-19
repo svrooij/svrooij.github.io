@@ -1,6 +1,8 @@
 ---
 title: "Daily rebuild github pages"
 published: true
+categories:
+  - Development
 tags:
   - Github
   - Github Actions
@@ -10,6 +12,8 @@ tags:
 Today I switched to [personal website](https://github.com/github/personal-website) for my new [personal page](https://static.svrooij.nl) on Github.
 It's a pretty nice template to generate a **static page** with the use of [Jekyll](https://jekyllrb.com/), at build time it loads some details from github (like my repositories).
 This means that the page will only show the data of the last time it was build.
+
+<!--more-->
 
 ## Github actions to the rescue
 

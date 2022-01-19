@@ -1,12 +1,16 @@
 ---
 title: "Wordpress plugin REST in peace"
 published: true
+categories:
+  - Development
 tags:
   - Wordpress
 ---
 
 In January 2017 I released a plugin for Wordpress called [WP REST API - filter fields](https://wordpress.org/support/plugin/rest-api-filter-fields/) it had a somewhat limited reach (2000+ active installs according to the stats),
 but people where using it. It was a plugin on the wordpress rest api (which was also a plugin at that time), it allowed the user to tell the server which fields from the api they wanted back. Because I wasn't changing the api, I was only filtering the output (after everything was retrieved from the database), this didn't make it much faster, but the resulting data to transfer was smaller (which was a big thing 4 years ago).
+
+<!--more-->
 
 ## Ten awesome reviews ⭐️
 

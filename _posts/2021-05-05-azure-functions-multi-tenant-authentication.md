@@ -1,6 +1,8 @@
 ---
 title: "Azure Functions with multi tenant authentication"
 published: true
+categories:
+  - Development
 tags:
   - Azure Functions
   - Authentication
@@ -11,6 +13,8 @@ image: /assets/images/azure-functions-json.png
 Azure Functions (and Azure App Service) support authentication out of the box. They even made a wizard to get you started quickly. This is really useful if you just want users from your tenant (or a specific other tenant) to login.
 
 Check-out the [documentation](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) to get started.
+
+<!--more-->
 
 ## Allow multiple tenants
 

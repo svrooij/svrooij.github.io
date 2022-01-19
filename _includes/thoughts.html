@@ -1,19 +1,12 @@
 
 <!-- <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Stephans' random thoughts</h2> -->
 <!-- <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Stuff on my mind</p> -->
-<div class="container-xl">
-  <div class="d-sm-flex flex-wrap gutter-condensed">
+<div class="container-md">
+  <div class="">
     {% for post in paginator.posts %}
-    {% assign mod = forloop.index | modulo: 3 %}
-    {% if mod == 1 %}
-       <div class="mb-3 col-sm-12 post-big">  <!--col-md-12 col-lg-6 col-xl-6 post-{{mod}} -->
-        {% include post-card.html %}
-      </div>
-    {% else %}
-      <div class="mb-3 col-sm-12 col-md-12 col-lg-6 col-xl-6 post-{{mod}} post-small">
-        {% include post-card.html %}
-      </div>
-    {% endif %}
+    <div>
+    {% include article-card.html %}
+  </div>
 
     {% endfor %}
   </div>

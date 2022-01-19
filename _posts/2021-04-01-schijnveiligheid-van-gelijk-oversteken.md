@@ -1,6 +1,8 @@
 ---
 title: "Schijnveiligheid van Marktplaats gelijk oversteken service"
 published: true
+categories:
+  - Frustration
 tags:
   - Marktplaats
   - Oplichting
@@ -9,6 +11,8 @@ card_image: /assets/images/header-marktplaats.png
 ---
 
 Marktplaats is in Nederland **de** website voor tweedehands spullen (als ik [Alexa ranking](https://www.alexa.com/topsites/countries/NL) moet geloven). Hier worden jaarlijks vele dingen verhandeld en weggegeven.
+
+<!--more-->
 
 ## Gelijk oversteken service
 

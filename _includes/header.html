@@ -21,16 +21,18 @@
     <meta property="og:title" content="{{ user.name }}" />
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
+    <meta name="twitter:site" content="@{{ site.social_media.twitter }}">
+    <meta name="twitter:creator" content="@{{ page.author | default: site.social_media.twitter }}">
+    <meta name="twitter:title"   content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ meta_description }}">
+    {% if page.twitter_image %}
+    <meta name="twitter:card"  content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.twitter_image }}">
+    {% else %}
+    <meta name="twitter:card"  content="summary">
+    <meta name="twitter:image" content="{{ site.avatar_url }}">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/assets/css/index.css" rel="stylesheet" type="text/css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172036806-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-172036806-1');
-    </script>
-
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>

@@ -8,6 +8,7 @@ tags:
   - Multi-tenant
   - Security
 card_image: /assets/images/header-development.png
+twitter_image: /assets/images/2022/01/2022-01-20-secure-multi-tenant-app.png
 ---
 
 Keeping your secrets secure, can be a huge challenge. And keeping secrets becomes a huge responsibility, especially if you're in the business of building multi-tenant applications. Microsoft created managed identities to ease this responsibility, but [according to the faq](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/managed-identities-faq#can-i-use-a-managed-identity-to-access-a-resource-in-a-different-directorytenant), you cannot use them to secure resources in other tenants. And that is exactly where we could use extra help is securing secrets.
@@ -135,14 +136,6 @@ public async Task<string> GetTokenEfficiently(CancellationToken cancellationToke
     // Save these values in a config file
     Uri keyId = new Uri("https://{kv-domain}.vault.azure.net/keys/{some-certificate-name}/{cert-version}");
     string kid = "60shQoCU....Fi0";
-
-    // Or load from KeyVault
-    // const string KeyVaultUri = "https://{kv-domain}.vault.azure.net/";
-    // const string certName = "{some-certificate-name}";
-    // var certificateInfo = await ClientAssertionGenerator.GetCertificateInfoFromKeyVault(new Uri(KeyVaultUri), certName, tokenCredential, cancellationToken);
-
-    // keyId = certificateInfo.KeyId;
-    // kid = certificateInfo.Kid;
 
     const string clientId = "d294e746-425b-44fa-896c-dacf2c7938b8";
     const string tenantId = "42a26c5d-b8ed-4f1b-8760-655f98154373";

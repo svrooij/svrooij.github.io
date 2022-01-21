@@ -1,8 +1,4 @@
-{% if site.style == 'dark' %}
-  {%- assign icon_color = "#ffffff" -%}
-{% else %}
-  {%- assign icon_color = "#24292e" -%}
-{% endif %}
+{%- assign icon_color = "#24292e" -%}
 {%- assign content = page.content -%}
 {%- assign posts_total = site.posts | size -%}
 {%- assign user = site.github.owner -%}
@@ -13,7 +9,7 @@
   {%- assign page_title = user.name -%}
   {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 -%}
 {%- endif -%}
-<html class="min-height-full" data-color-mode="light" data-dark-theme="dark_dimmed" data-light-theme="light">
+<html class="min-height-full" data-color-mode="dark" data-dark-theme="dark_dimmed" data-light-theme="light">
   <head>
     <meta charset="utf-8">
     <title>{{ page_title }}</title>
@@ -32,4 +28,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/assets/css/index.css" rel="stylesheet" type="text/css">
   </head>
-  <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+  <body class="bg-white min-height-full">

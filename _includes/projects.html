@@ -1,6 +1,6 @@
-<div class="container-xl">
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My open-source projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">My github repositories, last edited first.</p>
+<div class="container-xl" id="projects">
+<h2>My open-source projects</h2>
+<p class="f4 mb-4 color-fg-muted">My github repositories, last edited first.</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
@@ -20,7 +20,7 @@
 
   {% for repository in filtered_repos | limit: site.projects.limit %}
     {% unless site.projects.exclude.projects contains repository.name %}
-      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3">
         {% include repo-card.html %}
       </div>
     {% endunless %}

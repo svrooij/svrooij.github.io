@@ -1,17 +1,24 @@
-<html>
-  <head>
-    <title>Github information</title>
-  </head>
-  <body>
-    <h1>Find github user info</h1>
-    <input type="text" id="github_username" placeholder="Github username" onkeyup="keyPressed(event);"/>
-    <button onclick="loadUserInfo();">Search</button>
-    <hr />
-    <div id="info" style="display: none;">
-      <h3>Co-authored-by</h3>
-      <pre id="co-authored-by"></pre>
-    </div>
-    <script type="text/javascript" src="/assets/jquery-3.5.1.min.js"></script>
+---
+layout: default
+title: Github extra author
+type: page
+permalink: /github-info.html
+---
+
+<p>Sometimes you just want to include someone as a co-contributor of a certain commit. You can do this, but you'll need their personal (possibly hidden) mail address.</p>
+<p>Luckaly for us Github also creates a secret no-reply email for each user.</p>
+
+<h2>Find co-contributor string by Github user</h2>
+
+<input type="text" id="github_username" placeholder="Github username" onkeyup="keyPressed(event);"/>
+<button onclick="loadUserInfo();">Search</button>
+<hr />
+<div id="info" style="display: none;">
+  <h3>Co-authored-by</h3>
+  <pre id="co-authored-by"></pre>
+</div>
+
+<script type="text/javascript" src="/assets/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 
 
@@ -32,5 +39,3 @@ function loadUserInfo() {
   });
 }
 </script>
-  </body>
-</html>

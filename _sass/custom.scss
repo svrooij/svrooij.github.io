@@ -114,17 +114,22 @@ article {
 }
 
 code.language-plaintext {
-  background-color: rgba(27, 31, 35, 0.13);
+  background-color: var(--color-canvas-subtle);
+  color: var(--color-fg-on-emphasis);
   border-radius: 6px;
   padding: .2em .4em;
 }
 
 .highlighter-rouge pre.highlight {
-  background-color: #f6f8fa ;
+  box-shadow: var(--color-shadow-medium) !important;
+  background-color: var(--color-canvas-subtle) ;
   border-radius: 6px;
   line-height: 1.4rem;
   overflow: auto;
   padding: 16px;
+  border-color: var(--color-border-subtle);
+  border-width: 2px;
+  border-style: solid;
 }
 
 code {

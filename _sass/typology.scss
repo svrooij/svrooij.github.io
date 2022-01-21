@@ -24,15 +24,17 @@
   .entry-title {
     display: block;
     margin-bottom: 0;
-    color:brown;
+    color: var(--color-fg-default);
     font-size: 3rem;
     a:href,a:hover {
       text-decoration: none;
+      color: var(--color-fg-default);
     }
   }
   .post-letter {
     line-height: 1.2;
-    color: rgba(0,0,0,.07);
+    color: var(--color-neutral-muted);
+    //color: rgba(0,0,0,.07);
     z-index: 1;
     position: absolute;
     top: 37%;

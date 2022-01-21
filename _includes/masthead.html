@@ -1,12 +1,8 @@
-{% if site.layout == 'stacked' %}
-  {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0 h6-mktg' %}
-{% else %}
-  {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
-{% endif %}
+{% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0 h6-mktg' %}
 <!-- Masthead -->
 <div class="intro pt-8 pb-4">
 <img src="{{ site.avatar_url | default: user.avatar_url }}" class="circle mb-3" width="250" height="250" style="max-width: 250px;">
-<h1 class="color-fg-on-emphasis f1">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
+<h1 class="color-fg-on-emphasis f1"><a href="/" class="color-fg-on-emphasis no-underline">{{ user.name | default: user.login }}</a></h1>
 <h3 class="color-fg-on-emphasis f3 mb-3">
   {{ user.bio }}
 </h3>
@@ -25,7 +21,7 @@
     {% if user.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="mailto:{{ user.email }}">
           {{ user.email }}
         </a>
       </div>

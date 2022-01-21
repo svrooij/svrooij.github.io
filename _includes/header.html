@@ -19,7 +19,7 @@
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ meta_description }}" />
     <meta property="og:title" content="{{ user.name }}" />
-    <meta property="og:image" content="{{ user.avatar_url }}" />
+    <meta property="og:image" content="{{ user.avatar_url | absolute_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="twitter:site" content="@{{ site.social_media.twitter }}">
     <meta name="twitter:creator" content="@{{ page.author | default: site.social_media.twitter }}">
@@ -27,10 +27,10 @@
     <meta name="twitter:description" content="{{ meta_description }}">
     {% if page.twitter_image %}
     <meta name="twitter:card"  content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}{{ page.twitter_image }}">
+    <meta name="twitter:image" content="{{ page.twitter_image | absolute_url }}">
     {% else %}
     <meta name="twitter:card"  content="summary">
-    <meta name="twitter:image" content="{{ site.avatar_url }}">
+    <meta name="twitter:image" content="{{ site.avatar_url | absolute_url }}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/assets/css/index.css" rel="stylesheet" type="text/css">

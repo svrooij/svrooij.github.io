@@ -9,7 +9,7 @@
   {%- assign page_title = user.name -%}
   {%- assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 -%}
 {%- endif -%}
-<html class="min-height-full" data-color-mode="dark" data-dark-theme="dark_dimmed" data-light-theme="light">
+<html class="min-height-full" data-color-mode="auto" data-dark-theme="dark_dimmed" data-light-theme="light">
   <head>
     <meta charset="utf-8">
     <title>{{ page_title }}</title>

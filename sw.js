@@ -9,7 +9,8 @@ workbox.core.setCacheNameDetails({
 });
 
 workbox.precaching.precacheAndRoute([
-  {% for post in site.posts limit:12 %}{ url: '{{ post.url }}', revision: '{{ post.date | date: "%Y-%m-%d"}}' },
+  {% for post in site.posts limit:12 -%}
+  { url: '{{ post.url }}', revision: '{{ post.date | date: "%Y-%m-%d"}}' },
   {% endfor -%}
   { url: '/', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
   { url: '/page2', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },

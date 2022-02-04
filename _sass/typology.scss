@@ -8,6 +8,14 @@
     img {
       max-width: 100%;
     }
+    h2,h3 {
+      border-bottom: var(--color-border-subtle) 1px solid;
+      padding-bottom: 3px;
+      color: var(--color-neutral-emphasis-plus);
+      font-weight: 680;
+    }
+    h2{ font-size: 1.8rem;}
+    h3{ font-size: 1.5rem;}
   }
 }
 

@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Developer blog",
+  "name": "Dotnet dev",
+  "short_name": ".NET dev",
   "background_color": "#000",
   "theme_color": "#00a880",
   "start_url": "/",

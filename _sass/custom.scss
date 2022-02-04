@@ -114,8 +114,8 @@ article {
 }
 
 code.language-plaintext {
-  background-color: var(--color-canvas-subtle);
-  color: var(--color-fg-on-emphasis);
+  background-color: var(--color-canvas-inset);
+  color: var(--color-severe-fg);
   border-radius: 6px;
   padding: .2em .4em;
 }
@@ -137,3 +137,15 @@ code {
 }
 
 pre { font-size: inherit !important;}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 10px 0;
+  thead {
+    margin-bottom: 5px;
+  }
+  td {
+    padding: 2px;
+  }
+}

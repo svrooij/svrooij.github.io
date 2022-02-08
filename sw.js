@@ -1,12 +1,31 @@
 ---
 layout: none
 ---
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-sw.js');
+
+const { registerRoute } = workbox.routing;
+const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
+const { CacheableResponse } = workbox.cacheableResponse;
 
 workbox.core.setCacheNameDetails({
   prefix: 'svrooij.io',
   suffix: '{{ site.time | date: "%Y-%m" }}'
 });
+
+registerRoute(
+  '/',
+  new NetworkFirst()
+);
+
+registerRoute(
+  /page[0-99]/,
+  new NetworkFirst()
+)
+
+registerRoute(
+  new RegExp('/\\d{4}/\\d{2}/\\d{2}/.+'),
+  new StaleWhileRevalidate()
+)
 
 workbox.precaching.precacheAndRoute([
   {% for post in site.posts limit:12 -%}
@@ -18,22 +37,16 @@ workbox.precaching.precacheAndRoute([
   { url: '/assets/css/index.css', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' }
 ])
 
-workbox.routing.registerRoute(
-  '/',
-  new workbox.strategies.NetworkFirst()
+registerRoute(
+  ({request}) => request.destination === 'image' ,
+  new CacheFirst({
+    plugins: [
+      new CacheableResponse({statuses: [0, 200]})
+    ],
+  })
 );
 
-workbox.routing.registerRoute(
-  /page[0-99]/,
-  new workbox.strategies.NetworkFirst()
-)
-
-workbox.routing.registerRoute(
-  new RegExp('/\\d{4}/\\d{2}/\\d{2}/.+'),
-  new workbox.strategies.NetworkFirst()
-)
-
-workbox.routing.registerRoute(
+registerRoute(
   /assets\/(images|icons|css)/,
-  new workbox.strategies.CacheFirst()
+  new CacheFirst()
 );

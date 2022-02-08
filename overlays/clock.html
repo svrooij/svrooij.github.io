@@ -1,0 +1,56 @@
+---
+layout: none
+type: page
+permalink: /overlays/clock.html
+---
+<html>
+
+  <head>
+    <title>Stations klok</title>
+    
+      <!--[if IE]>
+        <script type="text/javascript" src="/assets/clock/excanvas.js"></script>
+      <![endif]-->
+
+      <script type="text/javascript" src="/assets/clock/station-clock.js"></script>
+      <script type="text/javascript">
+
+      var clock = new StationClock("clock");
+      clock.body = StationClock.RoundBody;
+      clock.dial = StationClock.SwissStrokeDial;
+      clock.hourHand = StationClock.SwissHourHand;
+      clock.minuteHand = StationClock.SwissMinuteHand;
+      clock.secondHand = StationClock.SwissSecondHand;
+      clock.boss = StationClock.NoBoss;
+      clock.minuteHandBehavoir = StationClock.BouncingMinuteHand;
+      clock.secondHandBehavoir = StationClock.OverhastySecondHand;
+
+      animate();
+
+      function animate() {
+        clock.draw();
+        window.setTimeout("animate()", 100);
+      }
+
+    </script>
+    <style>
+      html, body {padding: 0; margin: 0; position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
+      canvas { width: 100%; text-align: center;}
+      canvas:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    </style>
+	
+  </head>
+  
+  <body>
+    <div style="text-align: center;">
+      <canvas id="clock">
+        Canvas not supported in your browser       
+      </canvas>
+    </div>
+  </body>
+  
+</html>

@@ -51,6 +51,13 @@
     </div> -->
     
   </div>
+{% elsif page.tags %}
+  <div class="mb3">
+    {% for tag in page.tags -%}
+    <a class="Label Label--large Label--tag ml-1">{{tag}}</a>
+    {% endfor %}
+    <!-- tags here-->
+  </div>
 {% endif %}
 </div>
 <!-- Masthead end -->

@@ -149,3 +149,8 @@ table {
     padding: 2px;
   }
 }
+
+.Label--tag {
+  color: var(--color-fg-on-emphasis);
+  border-color: var(--color-fg-on-emphasis);
+}

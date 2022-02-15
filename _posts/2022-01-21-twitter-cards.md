@@ -6,6 +6,7 @@ categories:
 tags:
   - Twitter
   - Content
+  - Jekyll
 twitter_image: /assets/images/2022/01/twitter-cards.png
 ---
 

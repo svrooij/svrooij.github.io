@@ -15,6 +15,7 @@ tags:
   - lesgeven
   - presenteren
   - streamen
+  - OBS
 ---
 Iedereen is steeds meer online aan het communiceren op dit moment, dat is heel begrijpelijk in de huidige situatie. Hier zal ik in het kort proberen uit te leggen hoe je redelijk eenvoudig een professionele presentatie kan geven.<figure class="wp-block-gallery columns-2 is-cropped">
 

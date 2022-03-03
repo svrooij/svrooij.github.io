@@ -61,3 +61,17 @@ az-kv-proxy
 ```
 
 Start the proxy and try to open the swagger documentation of the proxy at `http://localhost:{port}/swagger/index.html`.
+
+## Demo
+
+In the [stream](https://www.twitch.tv/videos/1414084395) I showed the `/api/Token/kv-certificate` endpoint. For this endpoint, you'll need the following information:
+
+- `client_id` You application id from Azure
+- `tenant_id` The tenant ID
+- `scopes` Which scopes do you want a token for, it's an array, but when using the client credentials, you should be specifying only one!
+- `keyVaultUri` The uri of the keyvault
+- `certificateName` The name of the certificate
+
+This endpoint actually does two calls to the KeyVault, one to get the public part of the certificate (to generate the base64 url encoded hash and to get the keyUri), and one to the sign endpoint to actually sign the token. If you're using this proxy more often use the `api/Token/kv-key-info` endpoint to get the hash and the key once (they change only when you regenerate the certificate). And then use the `api/Token/kv-key` endpoint to get your token faster.
+
+In the demo I quickly mentioned the other endpoints. Just check-out the automatic openapi documentation on those endpoints at `/swagger/index.html`.

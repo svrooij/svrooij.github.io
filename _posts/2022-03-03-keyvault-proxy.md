@@ -14,6 +14,8 @@ twitter_image: /assets/images/2022/02/token-proxy.png
 Today I'll demo my new [KeyVault proxy](https://svrooij.io/2022/02/04/token-proxy/) in the [425show](https://www.twitch.tv/425show).
 This page will allow you to follow along.
 
+Check out the [recording](https://www.twitch.tv/videos/1414084395) and if you have any questions, contact me on [twitter @svrooij](https://twitter.com/svrooij).
+
 <!--more-->
 
 [![Nuget](https://img.shields.io/nuget/v/Smartersoft.Identity.Client.Assertion.Proxy?logoColor=00a880&style=for-the-badge)](https://www.nuget.org/packages/Smartersoft.Identity.Client.Assertion.Proxy/)

@@ -1,10 +1,12 @@
-      <script>
-        if('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js')
-          })
-        }
-      </script>
+{% if site.url != "http://0.0.0.0:4000" %}
+<script>
+  if('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+    })
+  }
+</script>
 <script defer data-domain="svrooij.io" src="https://plausible.io/js/plausible.js"></script>
+{% endif %}
   </body>
 </html>

@@ -7,7 +7,8 @@ tags:
   - Marktplaats
   - Oplichting
   - Waarschuwing
-card_image: /assets/images/header-marktplaats.png
+twitter_image: /assets/images/header-marktplaats.png
+ads: true
 ---
 
 Marktplaats is in Nederland **de** website voor tweedehands spullen (als ik [Alexa ranking](https://www.alexa.com/topsites/countries/NL) moet geloven). Hier worden jaarlijks vele dingen verhandeld en weggegeven.
@@ -51,6 +52,3 @@ Mijn mening: **Maak GEEN gebruik van de gelijk oversteken service van Marktplaat
 Marktplaats **helpt oplichters**, ze kunnen immers vertrouwen wekken met de gelijk oversteken service en krijgen nog steeds betaald zolang ze maar pakketjes opsturen ongeacht de inhoud.
 
 Ik ben niet verbonden met Marktplaats, dit plaats ik puur om mensen te waarschuwen. Mocht je nu bij Marktplaats werken en het niet eens zijn met mijn conclusie van jullie zeer slechte dienst, neem dan gerust contact met mij op.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5980945033015053"
-     crossorigin="anonymous"></script>

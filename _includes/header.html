@@ -34,5 +34,9 @@
     {% if site.url != "http://0.0.0.0:4000" %}
     <link rel="manifest" href="/assets/manifest.json">
     {% endif %}
+    {% if page.ads == true %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5980945033015053"
+     crossorigin="anonymous"></script>
+    {% endif %}
   </head>
   <body class="bg-white min-height-full">

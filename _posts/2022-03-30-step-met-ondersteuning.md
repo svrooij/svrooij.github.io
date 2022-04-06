@@ -1,5 +1,5 @@
 ---
-title: "Elektrische steps in Nederland"
+title: "UPDATE: Elektrische steps in Nederland"
 published: true
 categories:
   - Frustration
@@ -12,6 +12,8 @@ twitter_image: /assets/images/2022/03/e-step-verboden.png
 Nederland roept al jaren dat het technologisch voor wil lopen op de rest. We hebben enorm veel dingen uitgevonden in Nederland, Videobanden, bluetooth, enzovoort. Maar op het gebied van vervoersmiddelen lopen we echt enorm achter. In heel Europa zie je overal elektrische steps, in mijn ogen een super goede manier om mensen uit hun auto te krijgen.
 
 ![Elektrische step... levensgevaarlijk...](/assets/images/2022/03/e-step-verboden.png)
+
+**Update** Deze pagina sprak over een pagina die is verwijderd van `rijksoverheid.nl`, dat is inmiddels rechtgezet zie [update WOB Verzoek](#update-wob-verzoek).
 
 <!--more-->
 
@@ -48,6 +50,8 @@ Het is andere mensen ook opgevallen dat deze pagina is verwijderd, zij hebben da
 
 ![Elektrische step pagina verwijderd](/assets/images/2022/03/e-step-pagina-verwijderd.png)
 
+**Op 6 april 2022, is deze verwijderde pagina weer teruggeplaatst**, naar aanleiding van mijn [WOB Verzoek](#wob-verzoek). De informatie over steps met stepondersteuning, of de "meestepstep" zoals de overheid het noemt is te vinden op [deze pagina](https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg/e-step-met-trapondersteuning).
+
 ## Step ombouwen
 
 Er is dus in ieder geval 1 model step toegelaten op de openbare weg, zouden die regels dan niet voor alle vergelijkbare apparaten moeten gelden?
@@ -83,17 +87,37 @@ Ik vraag het ministerie om de volgende gegevens en zal het resultaat hier ook pl
 4. Alle interne/externe communicatie die heeft geleid tot het verwijderen van dit artikel uit het officiële sitearchief.
 5. Officiële beleid rondom een step met trapondersteuning.
 
+### UPDATE WOB Verzoek
+
+Binnen een week na het versturen van mijn WOB verzoek, werd ik gebeld door een medewerker van het Ministerie van Infrastructuur en Waterstaat.
+We hebben de kern van mijn WOB verzoek besproken, namelijk dat er een agent mij een boete heeft uitgeschreven.
+Hij heeft mij ook uitgelegd wat er met die pagina is gebeurt en dat het beleid **nog** niet is aangepast.
+
+De belofte dat die pagina op zeer korte termijn terug zou komen (dat inmiddels ook is [gebeurt](https://www.rijksoverheid.nl/onderwerpen/voertuigen-op-de-weg/e-step-met-trapondersteuning)), is voor mij voldoende reden om af te zien van het boven tafel krijgen van alle informatie rondom het tot stand komen en verwijderen van deze pagina.
+
+> In uw verzoek vroeg u ook om informatie over de totstandkoming van het beleid te aanzien van de meestepstep. De huidige status van de meestepstep is eigenlijk het gevolg van een interpretatie van de step (zonder motor) in relatie tot de fiets. In enkele burgervragen (sinds 2017) is het ministerie is gevraagd of een step moet worden gezien als een fiets en (indien ja) of een step met elektrische ondersteuning dan ook moet worden gezien als een fiets met elektrische ondersteuning. In de beantwoording op deze vragen is daarbij steeds de lijn gehanteerd dat een step moet worden gezien als een fiets en (daarmee) een step met ondersteuning moet worden gezien als een fiets met ondersteuning. De totstandkoming van het beleid is dus de (consequente) beantwoording van burgervragen met bovenstaande interpretatie van de step in relatie tot de fiets. Aangezien er nadien geen andere regelgeving is gekomen die iets anders regelt over de meestepstep, is bovenstaande interpretatie dus het beleid ten aanzien van de meestepstep.
+>
+> In de beantwoording is wel steeds gezegd dat de regels voor de fiets met ondersteuning dan ook wel allemaal gelden. Er moet dus sprake zijn van een ondersteunende motor die de stepbeweging versterkt, de ondersteuning neemt bij hogere snelheden geleidelijk aan af en stopt geheel bij 25 km/u en de ondersteunende motor heeft een vermogen van ten hoogste 250 Watt. Alleen wanneer aan al deze voorwaarden is voldaan geldt bovenstaande interpretatie **fiets-met-ondersteuning = step-met-ondersteuning**.
+>
+> -- Ambtenaar Ministerie Infrastructuur en Waterstaat
+
 ## Conclusie, stop met achter de feiten aanlopen
 
-De Nederlandse regering is het het prutsen met regels rondom elektrische steps. De kraakheldere informatie over steps met ondersteuning die op de website van de Nederlandse overheid stond, is verwijderd (oke, gek, maar kan gebeuren). Maar daarna is deze informatie ook actief uit het sitearchief gegooid, dat is raar. Binnenkort meer informatie hierover.
+De Nederlandse regering is het het prutsen met regels rondom elektrische steps. ~~De kraakheldere informatie over steps met ondersteuning die op de website van de Nederlandse overheid stond, is verwijderd (oke, gek, maar kan gebeuren). Maar daarna is deze informatie ook actief uit het sitearchief gegooid, dat is raar. Binnenkort meer informatie hierover.~~
 
-Als je als overheid [afgepakte steps verkoopt](https://www.rtlnieuws.nl/tech/artikel/5032031/overheid-verkoopt-elektrische-steps-die-de-weg-niet-op-mogen) dan vind ik dat ronduit crimineel. Ik weet niet zo goed hoe je daar op kan reageren. Maar het lijkt me dat je zo'n step dus moet markeren met je eigen naam en daarna de website van de bekende boedel veiling sites in de gaten moet houden.
+Schijnbaar worden er door de overheid [afgepakte steps verkocht](https://www.rtlnieuws.nl/tech/artikel/5032031/overheid-verkoopt-elektrische-steps-die-de-weg-niet-op-mogen), dat vind ik ronduit crimineel. Ik raad iedereen daarom strek aan zijn/haar step te markeren met stickers of door je naam erin te krassen. Stel dat die dan wordt afgepakt en je komt hem op een veiligsite tegen dan kan je de overheid daar op aanspreken.
 
-Men is nu van plan om dit ergens in 2023 te gaan reguleren. Ze zijn daarin erg geïnspireerd door de Duitse regels rondom elektrische steps (verplicht helm en brommerverzekering).
+Op "korte termijn" gaan ze elektrische steps reguleren, lees ergens in 2023.
+Ze zijn daarin erg geïnspireerd door de Duitse regels rondom elektrische steps (verplicht helm en brommerverzekering).
+Ik ben nog niet bijzonder enthousiast over de plannen die er liggen rondom LEV's, maar goed er gebeurt is, dat is beter dan jaren niks doen.
 
-Aan de ene kant ben ik blij dat er eigenlijk iets gaat gebeuren op dit gebied, de voorgestelde regels vind ik erg pamperend maar goed iets is beter dan niets. Ik ben teleurgesteld in de vorige minister (die de stint heeft goedgekeurd) en teleurgesteld in de nieuwe minster omdat er op dit punt nog steeds niks is veranderd. Er ligt zelfs een [voorstel](https://nieuwestep.nl/wetgeving/deelsteps-rotterdam/) om eerst een jaar met deel-steps te gaan experimenteren, alvorens eigen steps toe te staan. Dat is wat mij betreft de omgedraaide wereld.
+~~Er ligt zelfs een [voorstel](https://nieuwestep.nl/wetgeving/deelsteps-rotterdam/) om eerst een jaar met deel-steps te gaan experimenteren, alvorens eigen steps toe te staan. Dat is wat mij betreft de omgedraaide wereld.~~
 
-Misschien zijn mensen boven de 50 met een elektrische fiets wel gevaarlijker dan iemand op een elektrische step?
-Soms zoeven elektrische fietsen echt met hoge snelheid voorbij, ik heb er nog nooit een op een rollerbank zien staan. (Lijkt me ook best lastig, trouwens)
+> Er mag pas met deelsteps worden geëxperimenteerd als deze voertuigen officieel de weg op mogen, dus het zal nooit zo zijn dat deelsteps eerder worden toegestaand dan steps die van iemand zelf zijn.
+>
+> -- Ambtenaar Ministerie Infrastructuur en Waterstaat
+
+Als laatste de vraag of een elektrische step nu echt zoveel gevaarlijker is dan een elektrische fiets. Ligt dat niet ook voor een groot deel aan de berijder van de fiets/step? Iemand die nog nooit op een elektrische fiets heeft gezeten en ineens met 30 km/u voorbij zoeft hoeft ook niet perse heel veilig te zijn.
+Ik heb ook nog nooit gezien dat er een elektrische fiets op een rollerbank staat (is ook erg lastig), maar ik betwijfel of ze allemaal wel echt zijn gelimiteerd op 25 km/u.
 
 Heb je vergelijkbare ervaringen of wil je hier iets over kwijt? Stuur me even een bericht op [twitter @svrooij](https://twitter.com/svrooij).

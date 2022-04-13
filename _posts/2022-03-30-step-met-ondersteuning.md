@@ -113,7 +113,7 @@ Ik ben nog niet bijzonder enthousiast over de plannen die er liggen rondom LEV's
 
 ~~Er ligt zelfs een [voorstel](https://nieuwestep.nl/wetgeving/deelsteps-rotterdam/) om eerst een jaar met deel-steps te gaan experimenteren, alvorens eigen steps toe te staan. Dat is wat mij betreft de omgedraaide wereld.~~
 
-> Er mag pas met deelsteps worden geëxperimenteerd als deze voertuigen officieel de weg op mogen, dus het zal nooit zo zijn dat deelsteps eerder worden toegestaand dan steps die van iemand zelf zijn.
+> Er mag pas met deelsteps worden geëxperimenteerd als dat model step officieel de weg op mag. Het is niet zo dat een gemeente hier een uitzondering op kan maken. Wellicht is dat specifieke model niet verkrijgbaar voor particulieren, dat kunnen we op voorhand niet zeggen.
 >
 > -- Ambtenaar Ministerie Infrastructuur en Waterstaat
 

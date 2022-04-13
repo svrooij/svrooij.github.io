@@ -13,6 +13,8 @@ ads: true
 
 Marktplaats is in Nederland **de** website voor tweedehands spullen (als ik [Alexa ranking](https://www.alexa.com/topsites/countries/NL) moet geloven). Hier worden jaarlijks vele dingen verhandeld en weggegeven.
 
+**UPDATE 13-04-2022** deze pagina ging over hoe slecht de gelijkoversteken service van Marktplaats was. Op 13 april 2022 komt eindelijk het bericht dat [marktplaats stopt met gelijkoversteken service](https://www.rtlnieuws.nl/tech/artikel/5301713/marktplaats-gelijk-oversteken-betalen-versturen-ontvangen-functie-stopt). Dit is enorm goed nieuws, want dit was niet eens een *service* te noemen.
+
 <!--more-->
 
 ## Gelijk oversteken service
@@ -47,8 +49,10 @@ Als je dan aangifte zou doen en vervolgens de uitbetaling kan blokkeren door je 
 
 ## Conclusie
 
-Mijn mening: **Maak GEEN gebruik van de gelijk oversteken service van Marktplaats**. Deze "service" garandeerd enkel dat je een pakketje ontvangt en niet dat de inhoud ook klopt met de verkoop. De voorwaarden van deze dienst zijn veel te goed verstopt en Marktplaats kan dit net zo goed niet aanbieden, het wekt schijnveiligheid naar kopers toe.
+Mijn mening: **Maak GEEN gebruik van de gelijk oversteken service van Marktplaats**. Deze "service" garandeerde enkel dat je een pakketje ontvangt en niet dat de inhoud ook klopt met de verkoop. De voorwaarden van deze dienst zijn veel te goed verstopt en Marktplaats kan dit net zo goed niet aanbieden, het wekt schijnveiligheid naar kopers toe.
 
 Marktplaats **helpt oplichters**, ze kunnen immers vertrouwen wekken met de gelijk oversteken service en krijgen nog steeds betaald zolang ze maar pakketjes opsturen ongeacht de inhoud.
 
 Ik ben niet verbonden met Marktplaats, dit plaats ik puur om mensen te waarschuwen. Mocht je nu bij Marktplaats werken en het niet eens zijn met mijn conclusie van jullie zeer slechte dienst, neem dan gerust contact met mij op.
+
+Op 13 april 2022 kwam het nieuws naar buiten dat Marktplaats stopt met deze "service", wellicht hebben ze geluisterd naar dit bericht.

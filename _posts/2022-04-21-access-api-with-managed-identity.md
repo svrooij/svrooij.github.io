@@ -108,6 +108,14 @@ var tokenResponse = await tokenCredential.GetTokenAsync(
 // You now have a valid access token for the api in tokenResponse.Token.
 ```
 
+### Check the token
+
+You should copy the token and paste it in [jwt.ms](https://jwt.ms). This page lets you inspect the token content, and explains what everything means.
+
+## Validate the token
+
+Without assigning the correct Application Role, you'll still get a token for that specific application, but if won't have any roles. This is why the api that is protected with the tokens should not only validate the `iss` and `aud` claims, but also make sure the token has the expected Application Role. Tokens without the expected role(s) **SHOULD ALWAYS** be threated as invalid and thus result in an error. More details [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#controlling-tokens-without-the-roles-claim)
+
 ## Conclusion
 
 Once you know the steps it's really easy to setup a managed identity to access some build-in/custom api. Since the **Application ID URI** is used as a scope prefix, it is important to configure that on the API App registration, without this you will not get a token!

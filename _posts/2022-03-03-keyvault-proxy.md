@@ -14,10 +14,9 @@ Today I'll demo my new [KeyVault proxy](https://svrooij.io/2022/02/04/token-prox
 This page will allow you to follow along.
 
 Check out the [recording][link_twitch] and if you have any questions, contact me on [twitter @svrooij](https://twitter.com/svrooij).
-
 <!--more-->
 <div class="video_wrapper">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/xYD6we8Glss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HD5JiRrfRzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Badges

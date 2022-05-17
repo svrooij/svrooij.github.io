@@ -115,6 +115,27 @@ New-AzureADServiceAppRoleAssignment -ObjectId $sp.ObjectId -ResourceId $sp.Objec
 Set-AzureADServicePrincipal -ObjectId $sp.ObjectId -AppRoleAssignmentRequired $true
 ```
 
+or you can assign the app to all Global Admins
+
+```powershell
+$adSession = Connect-AzureAD
+
+$appId = "1b730954-1685-4b74-9bfd-dac224a7b894" # Azure Active Directory Powershell
+
+$sp = Get-AzureADServicePrincipal -Filter "appId eq '$appId'"
+if (-not $sp) {
+  $sp = New-AzureADServicePrincipal -AppId $appId
+}
+
+$role = get-azureaddirectoryrole -Filter "DisplayName eq 'Global Administrator'"
+$admins = Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+foreach ($admin in $admins) {
+  New-AzureADServiceAppRoleAssignment -ObjectId $sp.ObjectId -ResourceId $sp.ObjectId -Id ([Guid]::Empty.ToString()) -PrincipalId $admin.ObjectId
+}
+
+Set-AzureADServicePrincipal -ObjectId $sp.ObjectId -AppRoleAssignmentRequired $true
+```
+
 ## Unblock access to AzureAD module
 
 It's very important to assign the powershell module application to at least one user, since you're going to need powershell to revert the change above.

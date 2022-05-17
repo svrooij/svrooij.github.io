@@ -5,7 +5,8 @@ categories:
   - Security
 tags:
   - Powershell
-  - AzureAD
+  - Azure AD
+  - Data Extraction
 twitter_image: /assets/images/2022/05/extract-azure-ad-admins.png
 ---
 

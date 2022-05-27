@@ -131,11 +131,12 @@ With the above information you should be able to figure out a way to securely ge
 
 If you don't want to figure out how to sign client assertions in the cloud, you can check out one of these links that might help you solve the issue. We have build a special MSAL.net extension to help you do just that.
 
-- [Sign assertion in Key Vault](https://svrooij.io/2022/01/20/secure-multi-tenant-app/#keyvault-to-the-rescue)
+- [Sign assertion in Key Vault](/2022/01/20/secure-multi-tenant-app/#keyvault-to-the-rescue)
 - [Nuget Smartersoft.Identity.Client.Assertion](https://www.nuget.org/packages/Smartersoft.Identity.Client.Assertion/)
 - [Source Smartersoft.Identity.Client.Assertion](https://github.com/Smartersoft/identity-client-assertion/tree/main/src/Smartersoft.Identity.Client.Assertion)
+- [Demo signing client assertions in the cloud during development - 425show](/2022/03/03/keyvault-proxy/)
 - [MSAL.Net client assertions](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-net-client-assertions)
 
-Since I'm a dotnet developer these links are only for dotnet, the solution (signing the tokens in the Key Vault), is available in the Key Vault rest api. There are ways to accomplish the same in other languages.
+Since I'm a dotnet developer these links are only for dotnet, the solution (signing the tokens in the Key Vault) however, is available in the Key Vault rest api. There are ways to accomplish the same in other languages.
 
 <script src="{{ "/assets/mermaid-8.9.2/mermaid.min.js" | relative_url }}"></script>

@@ -125,9 +125,11 @@ As long as you're aware of the issue you might get to solve it before you're att
 
 ## Getting access token in a secure way?
 
+The most secure way to get an access token is to [use a managed identity](/2022/04/21/access-api-with-managed-identity/) but that isn't always possible. The second most secure way is to use a managed identity to connect to the Key Vault and sign the client assertion in the cloud.
+
 With the above information you should be able to figure out a way to securely get access tokens for your client application with the certificate stored securely in the Key Vault.
 
-If you don't want to figure it out yourself, you can check out one of these links that might help you solve the issue:
+If you don't want to figure out how to sign client assertions in the cloud, you can check out one of these links that might help you solve the issue. We have build a special MSAL.net extension to help you do just that.
 
 - [Sign assertion in Key Vault](https://svrooij.io/2022/01/20/secure-multi-tenant-app/#keyvault-to-the-rescue)
 - [Nuget Smartersoft.Identity.Client.Assertion](https://www.nuget.org/packages/Smartersoft.Identity.Client.Assertion/)

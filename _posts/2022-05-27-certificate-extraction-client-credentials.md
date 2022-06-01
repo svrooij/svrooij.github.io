@@ -15,6 +15,11 @@ You have this multi-tenant application that is protected with Azure AD, great! H
 
 <!--more-->
 
+## Certificate extraction series
+
+- [Client credentials - remote sign](/2022/05/27/certificate-extraction-client-credentials/)
+- [En-/decrypting in the cloud](/2022/06/01/certificate-extraction-encryption/)
+
 ## Certificates in application might leak
 
 > No problem, we store all certificates in an Azure Key Vault and only the application has access using a managed identity.

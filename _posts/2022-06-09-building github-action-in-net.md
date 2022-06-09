@@ -65,6 +65,7 @@ You'll need to create a [action.yml](https://github.com/svrooij/dotnet-feeder/bl
 All the details on creating this action.yml file can be found in the [documentation](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions). This is a sample of the action file used for dotnet-feeder.
 
 ```yaml
+{% raw -%}
 # Pick a great name for your action (this was not a good name by the way)
 name: 'dotnet-feeder - feed'
 description: 'Writing posts from a json feed to a markdown file, use for automatically updating your Profile readme.'
@@ -100,6 +101,7 @@ runs:
   - ${{ inputs.files }}
   - '--template'
   - ${{ inputs.template }}
+{% endraw %}
 ```
 
 ## Seeing your action execute

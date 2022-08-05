@@ -7,12 +7,15 @@ tags:
   - OpenID Connect
   - Security
   - Microservice
+  - "Series: Externalize Users"
 twitter_image: /assets/images/2022/07/externalize-applications.png
 ---
 
 Externalizing user accounts, what is he thinking? In this post I'll explain why every company should consider externalizing their user account management from their applications.
 
 <!--more-->
+
+{% include block-series.html tag="Series: Externalize Users" %}
 
 ## User management inside an application (common scenario)
 

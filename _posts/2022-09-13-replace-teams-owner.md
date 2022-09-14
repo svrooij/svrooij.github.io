@@ -116,7 +116,7 @@ You can check these changes in the audit log and should see something like this.
 
 ## Audit log
 
-This script is very useful to quickly manage all the teams the leaving employee was an owner of. Since changing group memberships can be a higly sensitive opertation, all the details are logging in the Azure AD Audit log.
+This script is very useful to quickly manage all the teams the leaving employee was an owner of. Since changing group memberships can be a higly sensitive operation, all the details are logged in the Azure AD Audit log.
 
 ![Add user audit log](/assets/images/2022/09/add-user-audit-log.png)
 

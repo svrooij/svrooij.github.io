@@ -22,7 +22,7 @@ We always suggest at least one owner per Team and adding a "manager" account, an
 
 These scripts use the new [Graph PowerShell Modules](https://docs.microsoft.com/en-us/powershell/microsoftgraph/get-started?view=graph-powershell-1.0), if you don't have them already, be sure to install them prior to using any of these scripts.
 
-```ps1
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
 Install-Module Microsoft.Graph.Teams -Scope CurrentUser 
 Install-Module Microsoft.Graph.Groups -Scope CurrentUser
@@ -32,7 +32,7 @@ Install-Module Microsoft.Graph.Groups -Scope CurrentUser
 
 You can use this script to quickly list all the Teams a user is joined and whether or not he/she is an owner.
 
-```ps1
+```powershell
 # Change accordingly
 $tenantId = "21009bcd-06df-4cdf-b114-e6a326ef3368";
 $userId = "613f5b2e-4360-4665-956b-ffeaa0f3014b";
@@ -68,7 +68,7 @@ foreach($team in $teams) {
 
 This script is to replace/remove the user in all teams where he/she is an owner, and to add an alternative user. Change the ID's accordingly.
 
-```ps1
+```powershell
 # Change accordingly
 $tenantId = "21009bcd-06df-4cdf-b114-e6a326ef3368";
 $userId = "613f5b2e-4360-4665-956b-ffeaa0f3014b";

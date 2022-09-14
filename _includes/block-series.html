@@ -1,7 +1,7 @@
-{% assign series = site.tags[include.tag] | sort: 'date'  %}
+{% assign series = site.tags[include.tag] %}
 {%- if page.url contains 'feed' -%}
 {%- elsif series %}
-
+{% assign series = series | sort: 'date' %}
 <div class="series-posts">
   <h3>{{ include.tag }}</h3>
   <ul>

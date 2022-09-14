@@ -1,5 +1,5 @@
 ---
-title: "Replace an owner in all their Teams"
+title: Replace an owner in all their Teams
 categories:
   - Scripting
 tags:
@@ -7,7 +7,7 @@ tags:
   - Administration
   - PowerShell
   - "Series: MSGraph PowerShell"
- twitter_image: /assets/images/2022/09/remove-owner-with-powershell.png
+twitter_image: /assets/images/2022/09/remove-owner-with-powershell.png
 ---
 
 Microsoft Teams without an owner are no longer managable, so what happens if some user leaves the company and he/she was an owner in several Teams?
@@ -27,15 +27,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Install-Module Microsoft.Graph.Teams -Scope CurrentUser 
 Install-Module Microsoft.Graph.Groups -Scope CurrentUser
 ```
-
-## Application not by a trusted publisher?
-
-When executing the `Connect-MgGraph` command below, you're prompted to consent to the application in the default browser. And depending on the tenant configration you might not be allowed to consent it yourself. Ask the global admin to do that for you.
-
-The consent screen displays the name `Microsoft Graph PowerShell` and that it's from an **unverified** publisher? Does that mean it's not to be trusted? You should decide yourself, I guess the module is created by Microsoft, but not configured correctly.
-It also lists the permissions you're requesting this time. If you previously consented to this application, the login screen is not even shown and you'll be redirect immediately.
-
-![Microsoft Graph consent](/assets/images/2022/09/graph-powershell-consent.png)
 
 ## List all Teams of a specific user
 
@@ -132,5 +123,14 @@ This script is very useful to quickly manage all the teams the leaving employee 
 It shows the application name `Microsoft Graph PowerShell`, that this was actually a user logging in (and not using client credentials), the Object ID of the user who executed the request. In the user agent `Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22000; en-NL) PowerShell/2022.8.5 New-MgGroupMember_CreateExpanded1` you can even see which command I used and the version of the module (I guess).
 
 But is also shows an IP, which is **NOT** the IP that was used to send the command. My best guess is that this is the IP of the Graph API backend server processing my request.
+
+### Application not by a trusted publisher?
+
+When executing the `Connect-MgGraph` command above, you're prompted to consent to the application in the default browser. And depending on the tenant configration you might not be allowed to consent it yourself. Ask the global admin to do that for you.
+
+The consent screen displays the name `Microsoft Graph PowerShell` and that it's from an **unverified** publisher? Does that mean it's not to be trusted? You should decide yourself, I guess the module is created by Microsoft, but not configured correctly.
+It also lists the permissions you're requesting this time. If you previously consented to this application, the login screen is not even shown and you'll be redirect immediately.
+
+![Microsoft Graph consent](/assets/images/2022/09/graph-powershell-consent.png)
 
 {% include block-series.html tag="Series: MSGraph PowerShell" %}

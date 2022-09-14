@@ -9,6 +9,8 @@ plugins:
 
 permalink: /:year/:month/:day/:title/
 
+repository: svrooij/svrooij.github.io
+
 sass:
   sass_dir: assets/css/
   load_paths:

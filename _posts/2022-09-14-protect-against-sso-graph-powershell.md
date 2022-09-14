@@ -9,7 +9,7 @@ tags:
 twitter_image: /assets/images/2022/09/graph-powershell-conditional-access.png
 ---
 
-Why would you want to disable SSO for some cloud app, we love SSO, it makes our life easier? I agree, single-sign-on is great, until it is used without the knowlage of a user that logged-in with his admin account (don't do that!).
+Why would you want to disable SSO for some cloud app, we love SSO, it makes our life easier? I agree, single-sign-on is great, until it is used without the knowledge of a user that logged-in with his admin account (don't do that!).
 
 <!--more-->
 
@@ -34,6 +34,12 @@ So if you're logged-in, in your default browser as admin and you already used th
 
 You should never execute scripts that you didn't check, but attackers might find a way to start a script without the user knowing. Being able to start a script as the current user is bad enough, but if that script is able to get this precious token for the Graph API, things might end badly.
 
+## Logoff yourself
+
+According to [the documentation](https://docs.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0#using-disconnect-mggraph) your Graph PowerShell session will be kept alive in the background. It possibly has a way to use a refresh token to renew the access token indefinitely (need more details).
+
+If you're finished with the Graph PowerShell, be sure to call `Disconnect-MgGraph`. Without this the (malicious) script doesn't even need to login.
+
 ## Conditional access to the rescue
 
 Let's create a new conditional access policy to at least enforce the use to re-authenticate every hour. This limits the access surface. You can off course also force the use of MFA or a trusted device.
@@ -44,3 +50,19 @@ The App ID used by the Graph PowerShell module is: `14d82eec-204b-4c2f-b7e8-296a
 Next set the other parameters as required, in the sample I picked Sign-in frequency 1 hour, but your millage may vary.
 
 ![Microsoft Graph conditional access](/assets/images/2022/09/graph-powershell-conditional-access.png)
+
+## Block users from using the module
+
+Because this module uses Azure AD authentication you can also stop users from using this PowerShell all together.
+
+1. Go to Azure AD, Enterprise application
+2. Switch to All Applications
+3. Search for `Microsoft Graph`
+4. Open the app **Microsoft Graph PowerShell** (one of the only apps with an icon)
+5. Go to properties
+6. Switch **Assignment required** to **Yes** (and Visible to users to **No**)
+7. Save the new properties 
+
+You can also add a group of users who are allowed to access this app and setup requesting access that way. Get creative.
+
+The enterprise application also has an **Sign-in logs** where you can see who is using the app and an **Audit logs** tabs where you can see what is modified by this application.

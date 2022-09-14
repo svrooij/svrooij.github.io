@@ -10,7 +10,7 @@ tags:
 twitter_image: /assets/images/2022/09/remove-owner-with-powershell.png
 ---
 
-Microsoft Teams without an owner are no longer managable, so what happens if some user leaves the company and he/she was an owner in several Teams?
+Microsoft Teams without an owner are no longer manageable, so what happens if some user leaves the company and he/she was an owner in several Teams?
 
 <!--more-->
 
@@ -116,7 +116,7 @@ You can check these changes in the audit log and should see something like this.
 
 ## Audit log
 
-This script is very useful to quickly manage all the teams the leaving employee was an owner of. Since changing group memberships can be a higly sensitive operation, all the details are logged in the Azure AD Audit log.
+This script is very useful to quickly manage all the teams the leaving employee was an owner of. Since changing group memberships can be a highly sensitive operation, all the details are logged in the Azure AD Audit log.
 
 ![Add user audit log](/assets/images/2022/09/add-user-audit-log.png)
 
@@ -126,7 +126,7 @@ But is also shows an IP, which is **NOT** the IP that was used to send the comma
 
 ### Application not by a trusted publisher?
 
-When executing the `Connect-MgGraph` command above, you're prompted to consent to the application in the default browser. And depending on the tenant configration you might not be allowed to consent it yourself. Ask the global admin to do that for you.
+When executing the `Connect-MgGraph` command above, you're prompted to consent to the application in the default browser. And depending on the tenant configuration you might not be allowed to consent it yourself. Ask the global admin to do that for you.
 
 The consent screen displays the name `Microsoft Graph PowerShell` and that it's from an **unverified** publisher? Does that mean it's not to be trusted? You should decide yourself, I guess the module is created by Microsoft, but not configured correctly.
 It also lists the permissions you're requesting this time. If you previously consented to this application, the login screen is not even shown and you'll be redirect immediately.

@@ -1,5 +1,5 @@
 ---
-title: Replace an owner in all their Teams
+title: Create Outlook category for everyone
 categories:
   - Scripting
 tags:

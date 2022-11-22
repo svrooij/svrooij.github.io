@@ -1,0 +1,29 @@
+<!doctype html>
+{% include header.html %}
+
+<div class="container-fluid text-center">
+  {% include masthead.html metadata=true %}
+
+  <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
+    <h1>My recent talks</h1>
+    <ul>
+      {% for talk in site.data.talks %}
+      <li><a href="{{talk.slides}}" target="_blank">{{talk.title}}</a> {{talk.date}}</li>
+      {% endfor %}
+    </ul>
+    {{ content }}
+  </div>
+
+  {% unless posts_total == 0 %}
+    <div class="p-4 mt-6" id="posts">
+      {% include thoughts.html %}
+    </div>
+  {% endunless %}
+
+  <div class="p-4 mt-6 color-bg-subtle">
+    {% include projects.html %}
+  </div>
+
+</div>
+
+{% include footer.html %}

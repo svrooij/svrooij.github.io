@@ -11,6 +11,9 @@ permalink: /:year/:month/:day/:title/
 
 repository: svrooij/svrooij.github.io
 
+include:
+ - .well-known
+
 sass:
   sass_dir: assets/css/
   load_paths:

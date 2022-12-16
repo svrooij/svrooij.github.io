@@ -13,6 +13,8 @@ Ever since Microsoft created [managed identities](https://docs.microsoft.com/en-
 
 In my [previous post](https://svrooij.io/2022/06/21/managed-identity-multi-tenant-app/) I wrote that it was possible to use a managed identity to get access tokens for some multi tenant application, if you haven't seen that post be sure to check it out since this post uses the knowlage from that post to demo the process.
 
+<!--more-->
+
 ## Deploy the demo app
 
 I've build a basic Azure Functions app, so you can try out the process and request tokens using managed identities. Go to [this repo][sample-repo] and deploy the functions app to Azure in your own desired way. For this one time deploy, I would use the wizard in Visual Studio, but all options are open.
@@ -111,4 +113,4 @@ public static class ConfidentialClientApplicationBuilderExtensions
 
 The code is only tested in the client credentials flow (eg. no user involved), but I see no reason why it should not work in a delegated flow where you normally use client credentials (secret or certificate).
 
-- [sample-repo]: https://github.com/svrooij/MultiTenantManagedIdentity
+[sample-repo]: https://github.com/svrooij/MultiTenantManagedIdentity

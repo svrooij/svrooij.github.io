@@ -5,7 +5,7 @@ categories:
   - Open-source
 tags:
   - Badges
-twitter_image: /assets/images/MVP_Badge_Horizontal_Preferred_Blue3005_RGB.png
+twitter_image: /assets/images/2023/01/social_badges.png
 ---
 
 You just created a new open-source project. Great, you rock! A lot of repositories have these nice images showing dynamic details of the repository. How does that work? By using these dynamic badges you can really make your repository stand out.

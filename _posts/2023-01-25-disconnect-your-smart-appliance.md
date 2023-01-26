@@ -38,7 +38,7 @@ And if you already have an api, just make sure your api is stable!
 AEG choose the easy route, and checks three public websites every 5 minutes when connected to your wifi. The AEG smart appliances also have this hidden cloud api which is used for controlling the devices, so there should not be a reason to connect to these websites:
 
 - `google.com` no shock there, that is the number one website I personally use if I have to check internet connectivity.
-- `baido.cn` yes, every 5 minutes your oven sends a message to the **Chinese** google alternative.
+- `baidu.cn` yes, every 5 minutes your oven sends a message to the **Chinese** google alternative.
 - `yandex.ru` yes, not even just China, also the **Russian** google alternative.
 
 I really don't like the fact that my oven connects to **China and Russia** just to check if it has an internet connection. If that is the only thing it's doing.

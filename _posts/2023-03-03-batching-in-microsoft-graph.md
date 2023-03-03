@@ -95,9 +95,9 @@ var batchRequestContent = new BatchRequestContent(graphClient);
 foreach(var userId in users)
 {
     var requestBody = new Microsoft.Graph.Models.ReferenceCreate { OdataId = $"https://graph.microsoft.com/v1.0/directoryObjects/{userId}" };
-    await batchCollection.AddBatchRequestStepAsync(graphClient.Groups[groupId].Members.Ref.ToPostRequestInformation(requestBody)); 
+    await batchRequestContent.AddBatchRequestStepAsync(graphClient.Groups[groupId].Members.Ref.ToPostRequestInformation(requestBody)); 
 }
-var responseCollection = await graphClient.Batch.PostAsync(batchCollection);
+var batchResponse = await graphClient.Batch.PostAsync(batchRequestContent);
 ```
 
 This code will throw an exception even before sending 1 byte of data to Graph, the `BatchRequestContent` will [throw an exception](https://github.com/microsoftgraph/msgraph-sdk-dotnet-core/blob/1f6cffe19664d3093917a577a1f807469838162f/src/Microsoft.Graph.Core/Requests/Content/BatchRequestContent.cs#L122-L125) when your foreach loop reached user 21.
@@ -107,7 +107,7 @@ This code will throw an exception even before sending 1 byte of data to Graph, t
 My `BatchRequestContentCollection` to the rescue.
 
 ```csharp
-var batchRequestContent = new BatchRequestContentCollection(graphClient);
+var batchCollection = new BatchRequestContentCollection(graphClient);
 foreach(var userId in users)
 {
     var requestBody = new Microsoft.Graph.Models.ReferenceCreate { OdataId = $"https://graph.microsoft.com/v1.0/directoryObjects/{userId}" };
